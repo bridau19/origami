@@ -1,0 +1,229 @@
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 1vmin;
+  padding: 0;
+  height: 330%;
+  background-color: black;
+  font-family: monospace;
+  color: #CB9B51;
+}
+
+h1 {
+  font-size: 8vmin;
+  font-weight: 100;
+  padding: 7vw 4vw 4vw 7vw;
+  margin: 0;
+}
+
+h2 {
+  font-size: 5vmin;
+  padding: 2vw;
+  margin: 0;
+}
+
+p {
+  font-size: 3vmin;
+  padding: 0 2vw 0 2vw;
+  margin: 0;
+}
+
+.mainGridContainer {
+  display: grid;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(26, 1fr);
+}
+
+.item-6x {
+  grid-column-end: span 6;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-image: url('bg-01.jpg');
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+}
+
+.triangleOne {
+  background-image: url('images/triangles-03.png');
+  width: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  grid-area: 2 / 1 / 4 / 4;
+}
+
+.triangleTwo {
+  background-image: url('images/triangles-04.png');
+  width: 80%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  grid-area: 2 / 5 / 4 / 7; /* grid-row-start / grid-column-start / grid-row-end / grid-column-end  */
+}
+
+.stepOne {
+  grid-area: 4 / 2 / 5 / 5;
+}
+.stepOneImg {
+  width: 60%;
+  grid-area: 5 / 2 / 6 / 5;
+}
+
+.stepTwo {
+  grid-area: 6 / 5 / 7 / 7;
+  text-align: right;
+}
+.stepTwoImg {
+  width: 60%;
+  grid-area: 6 / 3 / 7 / 6;
+}
+
+.stepThree {
+  grid-area: 7 / 1 / 8 / 4;
+}
+.stepThreeImg {
+  width: 80%;
+  grid-area: 7 / 4 / 7 / 6;
+}
+
+.stepFour {
+  grid-area: 8 / 2 / 9 / 5;
+}
+.stepFourImg {
+  width: 70%;
+  grid-area: 9 / 2 / 10 / 5;
+}
+
+.stepFiveImg {
+  width: 70%;
+  grid-area: 9 / 4 / 10 / 6;
+}
+.stepFive {
+  grid-area: 10 / 4 / 11 / 6;
+}
+.stepFiveImg2 {
+  width: 70%;
+  grid-area: 10 / 2 / 11 / 4;
+}
+
+.stepSix {
+  grid-area: 12 / 1 / 13 / 3;
+}
+.stepSixImg {
+  width: 70%;
+  grid-area: 12 / 3 / 13 / 5;
+}
+.stepSixImg2 {
+  width: 70%;
+  grid-area: 12 / 4 / 13 / 6;
+}
+.stepSixImg3 {
+  width: 70%;
+  grid-area: 12 / 5 / 13 / 7;
+}
+
+.stepSeven {
+  text-align: right;
+  grid-area: 14 / 4 / 15 / 7;
+}
+.stepSevenImg {
+  width: 70%;
+  grid-area: 14 / 1 / 15 / 3;
+}
+.stepSevenImg2 {
+  width: 70%;
+  grid-area: 14 / 2 / 15 / 4;
+}
+
+.stepEight {
+  grid-area: 15 / 3 / 16 / 5;
+}
+.stepEightImg {
+  width: 70%;
+  grid-area: 15 / 5 / 16 / 7;
+}
+
+.stepNine {
+  padding-top: 7vh;
+  text-align: right;
+  grid-area: 16 / 5 / 17 / 7;
+}
+.stepNineImg {
+  width: 70%;
+  grid-area: 16 / 1 / 17 / 3;
+}
+.stepNineImg2 {
+  width: 70%;
+  grid-area: 16 / 2 / 17 / 4;
+}
+.stepNineImg3 {
+  width: 70%;
+  grid-area: 16 / 3 / 17 / 5;
+}
+
+.stepTen {
+  grid-area: 18 / 2 / 19 / 4;
+}
+.stepTenImg {
+  width: 70%;
+  grid-area: 18 / 4 / 19 / 6;
+}
+.stepTenImg2 {
+  width: 70%;
+  grid-area: 18 / 5 / 19 / 7;
+}
+
+.stepEleven {
+  text-align: right;
+  grid-area: 19 / 2 / 20 / 4;
+}
+.stepElevenImg {
+  width: 70%;
+  grid-area: 19 / 1 / 20 / 3;
+}
+
+.stepTwelve {
+  grid-area: 20 / 3 / 21 / 5;
+}
+.stepTwelveImg {
+  width: 80%;
+  grid-area: 20 / 5 / 21 / 7;
+}
+
+.lastStepImg {
+  width: 80%;
+  grid-area: 21 / 2 / 22 / 4;
+}
+.lastStepImg2 {
+  width: 90%;
+  grid-area: 22 / 4 / 23 / 6;
+}
+
+.triangleThree {
+  width: 50%;
+  grid-area: 24 / 5 / 25 / 7;
+}
+
+.triangleFour {
+  width: 50%;
+  grid-area: 23 / 2 / 24 / 4;
+}
+
+.footer {
+  background-image: url('bg-02.jpg');
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: top;
+  grid-area: 25 / 1 / 26 / 7;
+  margin-bottom: -70%;
+}
